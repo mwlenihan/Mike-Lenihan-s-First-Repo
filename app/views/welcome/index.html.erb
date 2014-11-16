@@ -1,0 +1,24 @@
+		<div>
+			<h1> My Favorite Website</h1>
+				<%
+				@websites = [
+					["http://railsgirls.com", "Rails Girls"],
+					["https://en.wikibooks.org/wiki/Ruby_Programming", "Wikibooks"],
+					["http://guides.rubyonrails.org", "Ruby on Rails Guides"],
+				]
+				%>
+				<% for url, name in @websites %>
+				<li><a href="<%= url %>"><%= name %></a></li>
+				<% end %>
+			</div>
+				<img src="http://railsgirls.com/images/rg-warsaw.png" />
+		<h1>My Diary</h1>
+		<div>
+			<h2>Submitted a Rails Girls applications</h2>
+				<p>1.02.2014</p>
+				<p>Just Submitted an application to a Rails Girls workshop! Can't wait to see whether I'll get in!</p>
+				<h2>Got in!</h2>
+					<p>15.02.2014</p>
+					<p>Received an email that my application got accepted! I'll be at a RH workshop next week!</p>
+						<h2>The first day starts...</h2>
+					</div>
